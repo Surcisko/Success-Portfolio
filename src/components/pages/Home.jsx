@@ -30,10 +30,10 @@ export const Home = () => {
         </p>
 
         <div className="mt-12 flex gap-20 ">
-          <button className=" bg-primary hover:bg-primary/90 transition px-6 py-3 rounded-full  text-black font-medium md:px-3 lg:px-6">
+          <button className=" bg-primary hover:bg-primary/90 transition px-6 py-3 rounded-full  text-black font-medium md:px-3 lg:px-6 xl:px-11">
             Contact Me
           </button>
-          <button className="flex  gap-3  bg-primary hover:bg-primary/90 transition-colors px-6 py-3 md:px-3 lg:px-6 rounded-full  text-black font-medium">
+          <button className="flex  gap-3  bg-transparent border-2 border-primary text-white hover:bg-primary/90 transition-colors px-6 py-3 md:px-3 lg:px-6 rounded-full  hover:text-black font-medium cursor-pointer">
             <div>
               <FaDownload />
             </div>
@@ -48,7 +48,7 @@ export const Home = () => {
         <img
           src={bgprofile}
           alt=""
-          className="relative size-120 lg:size-150 rounded-full object-cover md:-top-8 opacity-100 md:left-60"
+          className="relative size-120 lg:size-150 rounded-full object-cover md:-top-8 opacity-100 md:left-60 xl:top-30"
         />
         {/* main profile image */}
         <img

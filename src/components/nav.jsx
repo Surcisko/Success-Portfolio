@@ -70,7 +70,7 @@ export const Nav = () => {
                     ))}
                   </div>
 
-                  <button className="btn-large flex gap-3 px-4 justify-center">
+                  <button className="btn-large flex gap-3 px-4 justify-center cursor-pointer">
                     <FaDownload />
                     Download CV
                   </button>

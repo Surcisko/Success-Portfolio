@@ -17,7 +17,7 @@ const portfolioArray = [
       {
         icon: <FiUser />,
         title: "Client:",
-        desc: "Social-Media-App",
+        desc: "Social-App",
       },
 
       {
@@ -28,12 +28,18 @@ const portfolioArray = [
 
       {
         icon: (
-          <a href="https://social-media-app-murex-one.vercel.app/">
+          <a
+            href="https://social-media-app-murex-one.vercel.app/"
+            target="_blank"
+          >
             <FiExternalLink />
           </a>
         ),
         title: (
-          <a href="https://social-media-app-murex-one.vercel.app/">
+          <a
+            href="https://social-media-app-murex-one.vercel.app/"
+            target="_blank"
+          >
             View Project
           </a>
         ),
@@ -55,7 +61,7 @@ const portfolioArray = [
       {
         icon: <FiUser />,
         title: "Client:",
-        desc: "Mobile-QR-Scan",
+        desc: "QR-Scan",
       },
 
       {
@@ -66,12 +72,14 @@ const portfolioArray = [
 
       {
         icon: (
-          <a href="https://mobile-scan-qr-code.vercel.app/ ">
+          <a href="https://mobile-scan-qr-code.vercel.app/ " target="_blank">
             <FiExternalLink />
           </a>
         ),
         title: (
-          <a href="https://mobile-scan-qr-code.vercel.app/ ">View Project</a>
+          <a href="https://mobile-scan-qr-code.vercel.app/ " target="_blank">
+            View Project
+          </a>
         ),
       },
     ],
@@ -91,7 +99,7 @@ const portfolioArray = [
       {
         icon: <FiUser />,
         title: "Client:",
-        desc: "Manage-Landing-Page",
+        desc: "Manage-Page",
       },
 
       {
@@ -102,12 +110,56 @@ const portfolioArray = [
 
       {
         icon: (
-          <a href="https://manage-landing-page-rose.vercel.app/">
+          <a
+            href="https://manage-landing-page-rose.vercel.app/"
+            target="_blank"
+          >
             <FiExternalLink />
           </a>
         ),
         title: (
-          <a href="https://manage-landing-page-rose.vercel.app/">
+          <a
+            href="https://manage-landing-page-rose.vercel.app/"
+            target="_blank"
+          >
+            View Project
+          </a>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: 4,
+    img: "https://i.ibb.co/Y4G4XGjF/portfolio-cap.jpg",
+    title: "Success-Portfolio",
+    details: [
+      {
+        icon: <FiFileText />,
+        title: "Project:",
+        desc: "Success-Portfolio",
+      },
+
+      {
+        icon: <FiUser />,
+        title: "Client:",
+        desc: "Success",
+      },
+
+      {
+        icon: <FiFileText />,
+        title: "Language:",
+        desc: "React, Tailwind Css",
+      },
+
+      {
+        icon: (
+          <a href="https://success-portfolio-seven.vercel.app/" target="_blank">
+            <FiExternalLink />
+          </a>
+        ),
+        title: (
+          <a href="https://success-portfolio-seven.vercel.app/" target="_blank">
             View Project
           </a>
         ),
@@ -138,7 +190,7 @@ export const Portfolio = () => {
       <h2 className="text-4xl  text-white  font-bold mb-20">
         My <span className="text-primary">Portfolio</span>
       </h2>
-      <div className=" grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className=" grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-10">
         {portfolioArray.map((item) => (
           <PortfolioData key={item.id} {...item} />
         ))}
