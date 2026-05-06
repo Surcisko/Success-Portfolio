@@ -6,9 +6,9 @@ import React, { useState } from "react";
 import jsPDF from "jspdf";
 
 export const Home = () => {
-  const [saving, setSaving] = useState(false);
+  const [saving, nowSaving] = useState(false);
   const saveResume = () => {
-    setSaving(true);
+    nowSaving(true);
 
     const img = new Image();
     // img.crossOrigin = "anonymous"; // important for external images
@@ -20,7 +20,7 @@ export const Home = () => {
       doc.addImage(img, "jpg", 0, 0, 417, 653);
       doc.save("SUCCESS.pdf");
 
-      setSaving(false);
+      nowSaving(false);
     };
   };
 
