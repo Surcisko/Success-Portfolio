@@ -15,10 +15,10 @@ export const Home = () => {
     img.src = "https://i.ibb.co/TSB0TJB/EDUCATION-CV-042846-page-0001.jpg"; // replace with your real image URL
 
     img.onload = () => {
-      const doc = new jsPDF("portrait", "px", "a4");
+      const imgdoc = new jsPDF("portrait", "px", "a4");
 
-      doc.addImage(img, "jpg", 0, 0, 417, 653);
-      doc.save("SUCCESS.pdf");
+      imgdoc.addImage(img, "jpg", 0, 0, 417, 653);
+      imgdoc.save("SUCCESS.pdf");
 
       nowSaving(false);
     };
