@@ -4,6 +4,7 @@ import newProfile from "../../assets/newProfile.png";
 import { FaDownload } from "react-icons/fa";
 import React, { useState } from "react";
 import jsPDF from "jspdf";
+import { Link } from "react-router-dom";
 
 export const Home = () => {
   const [saving, nowSaving] = useState(false);
@@ -50,11 +51,11 @@ export const Home = () => {
         </p>
 
         <div className="mt-12 flex gap-20 ">
-          <a href="/contact">
+          <Link to="/contact">
             <button className=" bg-primary hover:bg-primary/90 transition px-13 py-3 rounded-full  text-black font-medium md:px-3 lg:px-6 xl:px-11">
               Contact Me
             </button>
-          </a>
+          </Link>
 
           <button
             onClick={saveResume}
