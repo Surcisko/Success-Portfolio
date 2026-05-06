@@ -20,7 +20,7 @@ export const PortfolioData = ({ img, details }) => {
         />
 
         <ul className=" grid grid-cols-1 mb-3 px-10 space-y-5 py-10 gap-5 ">
-          {details.map(({ icon, title, desc, link }, index) => (
+          {details.map(({ icon, title, desc, link, time }, index) => (
             <li key={index} className="flex items-start gap-3 text-gray-300">
               <span className="text-xl ">{icon}</span>
               <div className=" flex  justify-center items-center space-x-1">
@@ -29,6 +29,7 @@ export const PortfolioData = ({ img, details }) => {
                 <a href={`${link}`} className="text-[0.55rem]">
                   {link}
                 </a>
+                <p className="text-xs">{time}</p>
               </div>
             </li>
           ))}

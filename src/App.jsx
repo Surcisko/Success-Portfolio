@@ -12,7 +12,7 @@ function App() {
       <Router>
         <Nav />
 
-        <div className="w-full max-w-7xl mx-auto px-6 md:px-0">
+        <div className="w-full max-w-7xl mx-auto px-6 md:px-0 ">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
