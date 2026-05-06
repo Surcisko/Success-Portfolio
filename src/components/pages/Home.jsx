@@ -51,7 +51,7 @@ export const Home = () => {
 
         <div className="mt-12 flex gap-20 ">
           <a href="/contact">
-            <button className=" bg-primary hover:bg-primary/90 transition px-11 py-3 rounded-full  text-black font-medium md:px-3 lg:px-6 xl:px-11">
+            <button className=" bg-primary hover:bg-primary/90 transition px-13 py-3 rounded-full  text-black font-medium md:px-3 lg:px-6 xl:px-11">
               Contact Me
             </button>
           </a>
