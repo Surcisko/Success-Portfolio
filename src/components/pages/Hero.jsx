@@ -91,7 +91,7 @@ export const Hero = () => {
           />
         </div>
       </div>
-      <div className="mt-20">
+      <div className="md:mt-20">
         <PreviewServices />
         <PreviewPortfolio />
         <Cta />
