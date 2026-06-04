@@ -17,7 +17,7 @@ export const Nav = () => {
 
     const img = new Image();
     // img.crossOrigin = "anonymous"; // important for external images
-    img.src = "https://i.ibb.co/TSB0TJB/EDUCATION-CV-042846-page-0001.jpg"; // replace with your real image URL
+    img.src = "https://i.ibb.co/Cpv6HV18/undefined.jpg"; // replace with your real image URL
 
     img.onload = () => {
       const doc = new jsPDF("portrait", "px", "a4");
@@ -38,7 +38,7 @@ export const Nav = () => {
           href="/"
           className="text-primary text-xl md:text-[24px] xl:text-3xl font-bold"
         >
-          SUCCESS
+          SUCCESS OYEBAMIJI
         </a>
 
         {/* <!--   Menu Items --> */}

@@ -16,20 +16,19 @@ export const PortfolioData = ({ img, details }) => {
         <img
           src={img}
           alt=""
-          className="h-100 w-full object-cover group-hover:scale-105 transition duration-500"
+          className="h-60 w-full object-cover group-hover:scale-105 transition duration-500"
         />
 
-        <ul className=" grid grid-cols-1 mb-3 px-10 space-y-5 py-10 gap-5 ">
-          {details.map(({ icon, title, desc, link, time }, index) => (
+        <ul className=" grid grid-cols-1 mb-3 px-10 space-y-3 py-5 gap-5 ">
+          {details.map(({ icon, title, desc, time, view }, index) => (
             <li key={index} className="flex items-start gap-3 text-gray-300">
               <span className="text-xl ">{icon}</span>
               <div className=" flex  justify-center items-center space-x-1">
                 <p className="text-sm font-semibold text-white">{title}</p>
                 <p className="text-xs">{desc}</p>
-                <a href={`${link}`} className="text-[0.55rem]">
-                  {link}
-                </a>
+
                 <p className="text-xs">{time}</p>
+                <p className="text-xs">{view}</p>
               </div>
             </li>
           ))}

@@ -16,7 +16,7 @@ const services = [
   },
 ];
 
-export const Services = () => {
+export const PreviewServices = () => {
   return (
     <div className="text-center py-4 px-2 text-white ">
       <h2 className="text-4xl font-bold  mt-30 mb-20">
