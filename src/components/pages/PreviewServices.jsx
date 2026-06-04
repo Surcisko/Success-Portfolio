@@ -18,7 +18,7 @@ const services = [
 
 export const PreviewServices = () => {
   return (
-    <div className="text-center py-4 px-2 text-white ">
+    <div className="text-center  px-2 text-white ">
       <h2 className="text-4xl font-bold  mt-30 mb-20">
         MY <span className="text-green-400">SERVICES</span>
       </h2>
