@@ -32,7 +32,7 @@ export const Hero = () => {
 
   return (
     <div>
-      <div className="grid lg:grid-cols-2 gap-20 items-center md:p-10 xl:p-0 mt-0">
+      <div className="grid lg:grid-cols-2 gap-20 items-center md:p-10 xl:p-0 mt-0 mb-0">
         {/* left content */}
         <div>
           <h1 className="font-bold text-primary text-[75px] mt-30 ">
