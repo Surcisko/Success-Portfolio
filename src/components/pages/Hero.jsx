@@ -32,7 +32,7 @@ export const Hero = () => {
 
   return (
     <div>
-      <div className="grid lg:grid-cols-2 gap-20 items-center md:p-10 xl:p-0 mt-0 mb-0">
+      <div className="grid lg:grid-cols-2 gap-x-20 gap-y-10 items-center md:p-10 xl:p-0 mt-0 mb-0">
         {/* left content */}
         <div>
           <h1 className="font-bold text-primary text-[75px] mt-30 ">
@@ -81,17 +81,17 @@ export const Hero = () => {
           <img
             src={bgprofile}
             alt=""
-            className="relative size-120 lg:size-150 rounded-full object-cover md:-top-8 opacity-100 md:left-60 xl:top-30"
+            className="relative size-120 lg:size-150 rounded-full object-cover md:-top-8 opacity-100 md:left-60 xl:top-30 lg:top-10 "
           />
           {/* main profile image */}
           <img
             src={newProfile}
             alt=""
-            className="relative -top-120 md:-top-8 md:-left-60 w-120 h-120 lg:size-150 rounded-full lg:top-30 lg:-left-92 "
+            className="relative -top-120 md:-top-8 md:-left-60 w-120 h-120 lg:size-150 rounded-full lg:top-10 lg:-left-70 xl:top-30 xl:-left-92 "
           />
         </div>
       </div>
-      <div className="  xl:mt-20">
+      <div className="  lg:mt-20">
         <PreviewServices />
         <PreviewPortfolio />
         <Cta />

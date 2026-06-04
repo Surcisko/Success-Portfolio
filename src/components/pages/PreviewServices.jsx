@@ -18,13 +18,13 @@ const services = [
 
 export const PreviewServices = () => {
   return (
-    <div className="text-center  px-2 text-white ">
-      <h2 className="text-4xl font-bold  mt-30 mb-20">
+    <div className="text-center lg:py-8 px-2 text-white ">
+      <h2 className="text-4xl font-bold   mb-20">
         MY <span className="text-green-400">SERVICES</span>
       </h2>
 
       {/* Card Container */}
-      <div className="grid grid-cols-1 xl:grid-cols-2  max-w-4xl mx-auto cursor-pointer size-4xl gap-12 mb-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2  max-w-4xl mx-auto cursor-pointer size-4xl gap-12 mb-10">
         {services.map((services, key) => (
           <div
             key={key}

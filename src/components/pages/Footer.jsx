@@ -18,12 +18,12 @@ export const Footer = () => {
       <div className="w-full max-w-7xl mx-auto px-6 md:px-0 md:flex justify-between items-center mb-12">
         {/* Left column */}
         <div>
-          <h2 className="text-2xl text-white font-semibold  px-5 xl:px-0">
+          <h2 className="text-2xl text-white font-semibold  px-5 lg:px-0">
             Building structured, scalable and sustainable Websites and Apps.
           </h2>
         </div>
         {/* Middle column */}
-        <div className="mt-9 hidden md:block px-3 xl:px-0">
+        <div className="mt-9 hidden md:block px-3 lg:px-0">
           {pageLinks.map((link) => {
             return (
               <ul>

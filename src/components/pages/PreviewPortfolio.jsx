@@ -118,7 +118,7 @@ export const PreviewPortfolio = () => {
       <h2 className="text-4xl  text-white  font-bold mb-20">
         My <span className="text-primary">Portfolio</span>
       </h2>
-      <div className=" grid grid-cols-1 xl:grid-cols-3  gap-x-5 gap-y-5">
+      <div className=" grid grid-cols-1 lg:grid-cols-3  gap-x-5 gap-y-5">
         {portfolioArray.map((item) => (
           <a key={item.id} href={item.link} target="_blank">
             <PortfolioData key={item.id} {...item} />
