@@ -11,23 +11,23 @@ const navLinks = [
 ];
 
 export const Nav = () => {
-  const [saving, setSaving] = useState(false);
-  const saveResume = () => {
-    setSaving(true);
+  // const [saving, setSaving] = useState(false);
+  // const saveResume = () => {
+  //   setSaving(true);
 
-    const img = new Image();
-    // img.crossOrigin = "anonymous"; // important for external images
-    img.src = "https://i.ibb.co/Cpv6HV18/undefined.jpg"; // replace with your real image URL
+  //   const img = new Image();
+  //   // img.crossOrigin = "anonymous"; // important for external images
+  //   img.src = "https://i.ibb.co/Cpv6HV18/undefined.jpg"; // replace with your real image URL
 
-    img.onload = () => {
-      const doc = new jsPDF("portrait", "px", "a4");
+  //   img.onload = () => {
+  //     const doc = new jsPDF("portrait", "px", "a4");
 
-      doc.addImage(img, "jpg", 0, 0, 417, 653);
-      doc.save("SUCCESS.pdf");
+  //     doc.addImage(img, "jpg", 0, 0, 417, 653);
+  //     doc.save("SUCCESS.pdf");
 
-      setSaving(false);
-    };
-  };
+  //     setSaving(false);
+  //   };
+  // };
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -55,9 +55,12 @@ export const Nav = () => {
             ))}
           </div>
 
-          <button onClick={saveResume} className="btn-small">
-            Download CV
-          </button>
+          <a
+            href="https://drive.google.com/file/d/1_M8bpZlIfzHJCWF4krHFMTnaa7TXkzn0/view?usp=drivesdk"
+            target="blank"
+          >
+            <button className="btn-small">Download CV</button>
+          </a>
         </div>
 
         {/* <-------Mobile view------>  */}
@@ -91,13 +94,15 @@ export const Nav = () => {
                     ))}
                   </div>
 
-                  <button
-                    onClick={saveResume}
-                    className="btn-large flex gap-3 px-4 justify-center cursor-pointer"
+                  <a
+                    href="https://drive.google.com/file/d/1_M8bpZlIfzHJCWF4krHFMTnaa7TXkzn0/view?usp=drivesdk"
+                    target="blank"
                   >
-                    <FaDownload />
-                    Download CV
-                  </button>
+                    <button className="btn-large flex gap-3 px-4 justify-center cursor-pointer">
+                      <FaDownload />
+                      Download CV
+                    </button>
+                  </a>
                 </div>
               </div>
             </>

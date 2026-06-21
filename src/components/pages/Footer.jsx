@@ -18,7 +18,7 @@ export const Footer = () => {
       <div className="w-full max-w-7xl mx-auto px-6 md:px-0 md:flex justify-between items-center mb-12">
         {/* Left column */}
         <div>
-          <h2 className="text-2xl text-white font-semibold  px-5 lg:px-0">
+          <h2 className="text-xl md:text-3xl text-white font-semibold  px-5 lg:px-0">
             Building structured, scalable and sustainable Websites and Apps.
           </h2>
         </div>
@@ -45,11 +45,13 @@ export const Footer = () => {
           {/*  Contact*/}
           <h4 className="text-lg font-semibold mb-4 text-white">Contact</h4>
 
-          <p className="text-gray-400 mb-2">
+          <p className=" text-sm md:text-md  lg:text-xl text-gray-400 mb-2">
             Email: oyebamijisuccess1@gmail.com.com
           </p>
 
-          <p className="text-gray-400 mb-4">Phone: +234 704 670 6407</p>
+          <p className="text-sm md:text-md  lg:text-xl text-gray-400 mb-4">
+            Phone: +234 704 670 6407
+          </p>
 
           {/* Social Icons */}
           <div className="flex gap-3 text-xl text-white">
@@ -61,7 +63,7 @@ export const Footer = () => {
       </div>
 
       {/* Bottom Line */}
-      <div className=" py-1 text-white  max-w-7xl mx-auto justify-start">
+      <div className=" py-1 text-sm md:text-md lg:text-xl text-white  max-w-7xl mx-auto justify-start">
         © {currentYear} Oyebamiji Success. All Rights Reserved.
       </div>
     </footer>

@@ -24,7 +24,7 @@ export const Services = () => {
       </h2>
 
       {/* Card Container */}
-      <div className="grid grid-cols-1 xl:grid-cols-2  max-w-4xl mx-auto cursor-pointer size-4xl gap-12 mb-10">
+      <div className="grid grid-cols-1 xl:grid-cols-2  max-w-4xl mx-auto cursor-pointer size-xl gap-12 mb-10">
         {services.map((services, key) => (
           <div
             key={key}

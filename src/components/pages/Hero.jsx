@@ -13,30 +13,30 @@ import { PreviewPortfolio } from "./PreviewPortfolio";
 
 export const Hero = () => {
   const [saving, nowSaving] = useState(false);
-  const saveResume = () => {
-    nowSaving(true);
+  // const saveResume = () => {
+  //   nowSaving(true);
 
-    const img = new Image();
-    // img.crossOrigin = "anonymous"; // important for external images
-    img.src = "https://i.ibb.co/Cpv6HV18/undefined.jpg"; // replace with your real image URL
+  //   const img = new Image();
+  //   // img.crossOrigin = "anonymous"; // important for external images
+  //   img.src = "https://i.ibb.co/Cpv6HV18/undefined.jpg"; // replace with your real image URL
 
-    img.onload = () => {
-      const imgdoc = new jsPDF("portrait", "px", "a4");
+  //   img.onload = () => {
+  //     const imgdoc = new jsPDF("portrait", "px", "a4");
 
-      imgdoc.addImage(img, "jpg", 0, 0, 417, 653);
-      imgdoc.save("SUCCESS.pdf");
+  //     imgdoc.addImage(img, "jpg", 0, 0, 417, 653);
+  //     imgdoc.save("SUCCESS.pdf");
 
-      nowSaving(false);
-    };
-  };
+  //     nowSaving(false);
+  //   };
+  // };
 
   return (
     <div>
-      <div className="grid lg:grid-cols-2 gap-x-20 gap-y-10 items-center md:p-10 xl:p-0 mt-0 mb-0">
+      <div className="grid lg:grid-cols-2 gap-x-20 gap-y-10 items-center md:p-10 xl:p-0">
         {/* left content */}
         <div>
-          <h1 className="font-bold text-primary text-[75px] mt-30 ">
-            <span className="text-green-400 text-5xl ">
+          <h1 className="font-bold text-primary text-3xl md:text-[75px] mt-30 ">
+            <span className="text-green-400 text-4xl  md:text-5xl">
               <Typewriter
                 words={["Web Developer", "Web Designer"]}
                 loop
@@ -51,27 +51,29 @@ export const Hero = () => {
             Hi! I'm <span>Success</span>
           </h1>
 
-          <p className="text-gray-300 max-w-125 mt-10  text-lg/relaxed ">
+          <p className="text-gray-300 max-w-125 mt-10  text-md/relaxed md:text-lg/relaxed ">
             I build visually captivating, user friendly websites and web apps
             that transform your ideas into seamless, engaging digital experience
           </p>
 
-          <div className="flex md:mt-12 gap-5">
+          <div className="flex mt-5 md:mt-12 gap-5">
             <Link to="/contact">
               <button className=" bg-primary hover:bg-primary/90 transition px-13 py-3 rounded-full  text-black font-medium md:px-3 lg:px-6 xl:px-11">
                 Contact Me
               </button>
             </Link>
 
-            <button
-              onClick={saveResume}
-              className="flex  gap-3  bg-transparent border-2 border-primary text-white hover:bg-primary/90 transition-colors px-6 py-3 md:px-3 lg:px-6 rounded-full  hover:text-black font-medium cursor-pointer"
+            <a
+              href="https://drive.google.com/file/d/1_M8bpZlIfzHJCWF4krHFMTnaa7TXkzn0/view?usp=drivesdk"
+              target="blank"
             >
-              <div>
-                <FaDownload />
-              </div>
-              Download CV
-            </button>
+              <button className="flex  gap-3  bg-transparent border-2 border-primary text-white hover:bg-primary/90 transition-colors px-6 py-3 md:px-3 lg:px-6 rounded-full  hover:text-black font-medium cursor-pointer">
+                <div>
+                  <FaDownload />
+                </div>
+                Download CV
+              </button>
+            </a>
           </div>
         </div>
 
@@ -81,17 +83,17 @@ export const Hero = () => {
           <img
             src={bgprofile}
             alt=""
-            className="relative size-120 lg:size-150 rounded-full object-cover md:-top-8 opacity-100 md:left-60 xl:top-30 lg:top-10 "
+            className="relative size-100 md:size-120 lg:size-150 rounded-full object-cover md:-top-8 opacity-100 md:left-60 xl:top-30 lg:top-10 "
           />
           {/* main profile image */}
           <img
             src={newProfile}
             alt=""
-            className="relative -top-120 md:-top-8 md:-left-60 w-120 h-120 lg:size-150 rounded-full lg:top-10 lg:-left-70 xl:top-30 xl:-left-92 "
+            className="relative -left-5 -top-111 h-110 w-110 md:-top-8 md:-left-60 md:w-120 md:h-120 lg:size-150 rounded-full lg:top-10 lg:-left-70 xl:top-30 xl:-left-92 "
           />
         </div>
       </div>
-      <div className="  lg:mt-20">
+      <div className="  lg:mt-20 xl:mt-25">
         <PreviewServices />
         <PreviewPortfolio />
         <Cta />

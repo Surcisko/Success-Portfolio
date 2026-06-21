@@ -3,7 +3,7 @@ import { FiFileText, FiUser, FiExternalLink } from "react-icons/fi";
 import { FaRegClock } from "react-icons/fa6";
 import { FaLink } from "react-icons/fa6";
 
-const portfolioArray = [
+const portfolioArray_ = [
   {
     id: 1,
     img: "https://i.ibb.co/RkPMYzYb/social-media.jpg",
@@ -118,8 +118,8 @@ export const PreviewPortfolio = () => {
       <h2 className="text-4xl  text-white  font-bold mb-20">
         My <span className="text-primary">Portfolio</span>
       </h2>
-      <div className=" grid grid-cols-1 lg:grid-cols-3  gap-x-5 gap-y-5">
-        {portfolioArray.map((item) => (
+      <div className=" grid grid-cols-1 lg:grid-cols-3 lg:px-0  gap-x-5 gap-y-5">
+        {portfolioArray_.map((item) => (
           <a key={item.id} href={item.link} target="_blank">
             <PortfolioData key={item.id} {...item} />
           </a>

@@ -113,41 +113,41 @@ const portfolioArray = [
     ],
   },
 
-  {
-    id: 4,
-    img: "https://i.ibb.co/0RgQPLXr/grocify.jpg",
-    title: "Grocify",
-    link: "https://grocify-olive.vercel.app/",
-    details: [
-      {
-        icon: <FiFileText />,
-        title: "Project:",
-        desc: "A landing Page",
-      },
+  // {
+  //   id: 4,
+  //   img: "https://i.ibb.co/0RgQPLXr/grocify.jpg",
+  //   title: "Grocify",
+  //   link: "https://grocify-olive.vercel.app/",
+  //   details: [
+  //     {
+  //       icon: <FiFileText />,
+  //       title: "Project:",
+  //       desc: "A landing Page",
+  //     },
 
-      {
-        icon: <FiUser />,
-        title: "Client:",
-        desc: "Personal Project",
-      },
+  //     {
+  //       icon: <FiUser />,
+  //       title: "Client:",
+  //       desc: "Personal Project",
+  //     },
 
-      {
-        icon: <FiFileText />,
-        title: "Language:",
-        desc: "HTML, CSS, JS",
-      },
+  //     {
+  //       icon: <FiFileText />,
+  //       title: "Language:",
+  //       desc: "HTML, CSS, JS",
+  //     },
 
-      {
-        icon: <FaRegClock />,
-        time: "07|01|26",
-      },
+  //     {
+  //       icon: <FaRegClock />,
+  //       time: "07|01|26",
+  //     },
 
-      {
-        icon: <FaLink />,
-        view: "Click to view this Project",
-      },
-    ],
-  },
+  //     {
+  //       icon: <FaLink />,
+  //       view: "Click to view this Project",
+  //     },
+  //   ],
+  // },
 
   {
     id: 5,
